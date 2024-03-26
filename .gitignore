@@ -68,9 +68,11 @@ instance/
 dataset
 # Scrapy stuff:
 .scrapy
-
+prepare_data*
 # Sphinx documentation
 docs/_build/
+
+google_data/*
 
 # ckpt/*
 
