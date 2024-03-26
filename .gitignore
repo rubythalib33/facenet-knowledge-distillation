@@ -2,10 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+.vscode
 # C extensions
 *.so
-
+dataset/*
+prepare_data.py
 # Distribution / packaging
 .Python
 build/
@@ -64,12 +65,14 @@ db.sqlite3-journal
 # Flask stuff:
 instance/
 .webassets-cache
-
+dataset
 # Scrapy stuff:
 .scrapy
 
 # Sphinx documentation
 docs/_build/
+
+# ckpt/*
 
 # PyBuilder
 .pybuilder/
