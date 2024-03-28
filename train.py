@@ -18,6 +18,7 @@ transform = transforms.Compose([
     transforms.RandomRotation(20),  # Auto rotate +/- 20 degrees
     transforms.ColorJitter(brightness=0.2, contrast=0.2),  # Auto brightness/contrast
     transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),  # Normalize
 ])
 dataset = datasets.ImageFolder(DATA_SOURCE, transform=transform)
 dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
