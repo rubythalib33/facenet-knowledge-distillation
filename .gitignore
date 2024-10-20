@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 dataset/*
+youtube_data
+google_data
 prepare_data.py
 # Distribution / packaging
 .Python
